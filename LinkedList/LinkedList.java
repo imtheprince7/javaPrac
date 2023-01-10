@@ -13,10 +13,9 @@ public class LinkedList {
         }
     }
     Node head = null;
-
+    Scanner sc = new Scanner(System.in);
     public void insertAtBegin() {
-        int data, n;
-        Scanner sc = new Scanner(System.in);
+        int data, n;       
         do {
             System.out.println("Enter Element to insert into Node");
             data = sc.nextInt();
@@ -33,6 +32,27 @@ public class LinkedList {
         sc.close();
     }
 
+    public void insertAtEnd()
+    {
+        int data, n;       
+        do {
+            System.out.println("Enter Element to insert into Node");
+            data = sc.nextInt();
+            Node newNode = new Node(data);
+        if (head == null) {
+                head = newNode;
+            }
+             else {
+                Node temp = head;
+                while(temp !=null){
+                    newNode.next = newNode;
+                }
+
+             } 
+             System.out.println("Do you Wanna Continue: Press  1 or Press ANY_KEY");
+             n = sc.nextInt();
+            } while(n!=2);
+    }
     public void printNode() {
         Node temp = head;
         while (temp.next != null) {
@@ -44,6 +64,7 @@ public class LinkedList {
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.insertAtBegin();
+        ll.insertAtEnd();
         ll.printNode(); 
     }
 }

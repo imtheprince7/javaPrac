@@ -15,24 +15,29 @@ ScalarC /C++
 
 **********   WHAT IS Lambda Expression  ***********
 It's an anonymous Function.
-    Nameless
+    Nameless ( No Name )
     Without return Type
     Without modifiers.
 
 
-SYMBOL :         () ->
+SYMBOL :  () ->
 ** IF body contain only One line then no need to write between { }.
-    More than one lines operation should be in { }.
+    More than one lines logics should be in { }.
+
+
+EG 1:----
+        public void msg(){
+            System.out.println("Hello World");
+        }
 
  ()-> System.out.println("Hello World");
 
 EG 2:---
-    public void addition( int a, int b){
-        System.out.println("Sum is "+" "+(a+b));
-    }
+        public void addition( int a, int b){
+            System.out.println("Sum is "+" "+(a+b));
+        }
 
-     (a+b)-> System.out.println((a+b));    [Addition in LambdaExpression]
-
+ (a+b)-> System.out.println((a+b));    [Addition in LambdaExpression]
 
 
 EG 3:---   
@@ -40,12 +45,15 @@ EG 3:---
             return a*a;
          }
 
- (int n) -> { return n*n };
+ (int n) -> { return n*n; };
         OR
  (int n) -> n*n;
  (n) -> n*n;        [ concise in lines &  Easy to Use]
   n -> n*n;
 
+**********  Without Curly braces We cannot use return keyword. Compiler will consider returned 
+            value automatically.
+        within Curly braces IF we wanna return some value we must use return statement.
 
 
 

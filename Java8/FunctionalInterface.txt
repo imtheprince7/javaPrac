@@ -1,9 +1,80 @@
 ==============  functional Interface ==================
 
-Those Interface which contains only ONE SINGLE ABSTRACT METHOD  are called functional Interface
+Those Interface which contains ONLY ONE SINGLE ABSTRACT METHOD  are called functional Interface
 EG:--
     Runnable ===> run()
     Comparable ===> compareTo();
     Comparator ===> compare();
     ActionListener ===> actionPerformed();
     Callable ===> call();
+
+
+
+    ************** AFTER JAVA-8  UPDATE **************
+
+functional Interface:
+        It must contains ONLY ONE SINGLE ABSTRACT METHOD in functional Interface, but can take any number of 
+        Default Methods & static Methods.
+    
+EG:----
+    interface Interf
+    {
+        public void m1();     --- ONLY ONE SINGLE ABSTRACT METHOD
+       
+        default void m2(){
+
+        }
+        default void m2a(){
+
+        }
+        public static void m3(){
+
+        }
+        public static void m3b(){
+
+        }
+    }
+
+    
+
+================    @functionalInterface   =================
+When we wanna specify explicitly any interface functionalInterface then we
+    use @ ( Annotation) before that interface.
+
+
+    Not neccessary to Use BUT if we use 
+        It will show error if used Interface won't follow functionalInterface RULE.
+        For saving Time & skipping Error good to use Annotation.[@functionalInterface].
+
+
+
+EG2:-
+    interface Interf{
+        public void addition(int a , int b);
+    }
+    Class Demo implements Interf{
+        public void addition(int a , int b){
+            System.out.println('The Sum is:"+" "+(a+b));
+        }
+    }
+
+    Class Test {
+        public static void main(String [] args){
+            Interf if = new Demo();
+            if.addition(5,10);
+        }
+    }
+
+
+        ******** BY USING LAMBDA FunctION ***********
+    interface Interf{
+        public void addition(int a , int b);
+    }
+
+    Class Test {
+        public static void main(String [] args){
+            Interf if =(a,b)->  System.out.println('The Sum is:"+" "+(a+b));
+            if.addition(10,50);
+            if.addition(50,100);
+    }
+        

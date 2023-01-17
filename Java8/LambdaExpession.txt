@@ -58,3 +58,11 @@ EG 3:---
 
 
 
+
+============== LAMBDA Expression ===============
+    1. in the Nomal way ( Code Precice)
+    2. in  @functionalInterface
+    3. in  Multhreading
+    4. in Collection
+    5. in Anonymous Class
+    6. in Inner-Class

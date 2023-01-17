@@ -78,3 +78,13 @@ EG2:-
             if.addition(50,100);
     }
         
+=================  CORE CONCEPT ===============
+1. When we write interface class
+    2. implements Interface class to normal Class
+    3. In main Class ( FileName)
+
+--- When we compile then    
+    JVM Create 3 .class File.
+    1. .class File For Interface
+    2. .class File For ImplementedClass
+    3. .class File For main(FileName)

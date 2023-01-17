@@ -1,0 +1,9 @@
+==============  functional Interface ==================
+
+Those Interface which contains only ONE SINGLE ABSTRACT METHOD  are called functional Interface
+EG:--
+    Runnable ===> run()
+    Comparable ===> compareTo();
+    Comparator ===> compare();
+    ActionListener ===> actionPerformed();
+    Callable ===> call();

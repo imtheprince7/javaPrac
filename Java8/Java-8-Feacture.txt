@@ -1,0 +1,29 @@
+JAVA 8 :-  18'th MARCH 2014
+
+WHY JAVA-8 COME IN MARKET:---
+        Origin of Python, R, Scalar :-- All are functional Programming Language
+        Progammer easily write concise code less no of lines as compare to JAVA 
+        For exist in MARKET:--- Java need to update his legacy.
+
+Concise Code:
+    Enabling functional Programming
+
+1. Lambda Expression
+2. functional Interface
+3. Default Methods and static Methods
+4. Predefined Funct Interfaces
+    Predicate  
+    Function
+    Consumer
+    Supplier
+    etc.........
+
+5. Double Colon Operator ( :: )
+    Method reference
+    Constructor reference
+
+6. Streams
+7. Date and Time API
+8. Optional Class
+9. Nashron JavaScript Engine.
+10. etc.....

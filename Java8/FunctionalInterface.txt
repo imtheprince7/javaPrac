@@ -67,6 +67,7 @@ EG2:-
 
 
         ******** BY USING LAMBDA FunctION ***********
+        
     interface Interf{
         public void addition(int a , int b);
     }

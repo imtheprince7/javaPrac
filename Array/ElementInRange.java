@@ -3,7 +3,8 @@ public class ElementInRange{
     {	
         int [] arr = new int []{1, 4, 5, 2, 7, 8, 3};
         int n=arr.length, A=2, B=5;
-        System.out.println(check_elements(arr,n,A,B));
+        boolean b = check_elements(arr,n,A,B);
+        System.out.println(b);
     }
    static boolean check_elements(int arr[], int n, int A, int B)
    {

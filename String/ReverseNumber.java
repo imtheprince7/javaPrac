@@ -6,6 +6,7 @@ public class ReverseNumber {
          System.out.println(reverseNum(str));
          System.out.println(reverseString(str));
          System.out.println(removeVowel(str));
+         System.out.println(removeConsonent(str));
 
     }
     public static String reverseNum(String str){
@@ -35,6 +36,17 @@ public class ReverseNumber {
                 sb.append(str.charAt(i));
             }
         }
+        return sb.toString();
+    }
+
+    static String removeConsonent(String str){ 
+        StringBuffer sb = new StringBuffer();
+        for(int i=0; i< str.length(); i++){
+             if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i' || str.charAt(i)=='o' || str.charAt(i)=='u'){
+                sb.append(str.charAt(i));
+             }
+         }
+    
         return sb.toString();
     }
 

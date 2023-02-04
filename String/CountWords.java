@@ -11,6 +11,7 @@ public class CountWords {
         sc.close();
         int num = 123456;
         System.out.println("Reverse Number  is:"+" "+reverseNum(num));
+        System.out.println("Total Vowel is:"+" "+totalVowel(str));
         
         
     }
@@ -34,6 +35,15 @@ public class CountWords {
              rev+= str.charAt(i);
         }
         return rev;
+    }
+
+    public static int totalVowel(String str){
+        int count=0;
+        for(int i=0; i<str.length(); i++){
+            if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i' || str.charAt(i)=='o' || str.charAt(i)=='u')
+                count++;
+        }
+        return count; 
     }
 
 }

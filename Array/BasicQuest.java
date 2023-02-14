@@ -21,6 +21,18 @@ public class BasicQuest {
         else
             return false;
     }
+    public static boolean findPalindorm(int num){
+        int n=num, rem=0, rev =0;
+        while(n>0){
+            rem = n%10;
+            n/= n;
+            rev = (rev*10)+rem;
+        }
+        if(rev==num)
+            return true;
+        else
+            return false;
+    }
 
     static int findReverse (int num){
         int rev=0, rem=0;

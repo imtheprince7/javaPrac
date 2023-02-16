@@ -87,7 +87,7 @@ TimeOfTermination:  Take less time to terminate.
     
     
      ========================== Runnable-Interface  DEMO ================
-     public class ThreadDemo implements runnable{
+     public class ThreadDemo implements Runnable{
         public void demo(){
         for(int i=1; i<=5; i++)
             System.out.println(i +" ");
@@ -100,4 +100,16 @@ TimeOfTermination:  Take less time to terminate.
     } // program-end here
         
      
+   
+     ========================== Thread-Class DEMO ================
      
+     public class ThreadDemoo extends Thread {
+        public void demo(){
+         for(int i=11; i<=15; i++)
+            System.out.println(i +" ");
+        }
+        public static void main(String [] args){
+            ThreadDemoo threadDemo = ThreadDemo();            
+            threadDemo.start();
+        }  // main-method close here
+    } // program-end here

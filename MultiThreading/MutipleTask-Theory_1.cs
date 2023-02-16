@@ -52,3 +52,34 @@ Why We use MultiThreading:
     * Thread-Group
     * Concurrency
     * Thread-Pool
+
+========================   PROCESS /THREAD  ======================================
+
+## PROCESS:        
+Def:                A program which is in executing state.
+Weight:             It's a heavy weight 
+ContextSwitching:   Takes More time.
+Communication:      Take more time.
+AddressSpace:       Each process has different address space.
+Dependency:         Process are not dependent on each other
+Synchronization:    Process doesn't require synchronization
+TimeOfCreation:     Take more time to create.
+TimeOfTermination:  Take More time to terminate.
+
+
+## THREAD
+Def:                It's a sub-part of process (Small-task).
+Weight:             Light-Weight
+ContextSwitching:   Takes less time
+Communication:      Takes less time
+AddressSpace:       Threads share same address space
+Dependency:         Threads are dependent on each other.
+Synchronization:    Threads may require synchronization.
+TimeOfCreation:     Take less time to create.
+TimeOfTermination:  Take less time to terminate.
+
+
+
+====================================        WAY TO CREATE THREADS   ================================
+    1.  By using Thread-Class
+    2.  By using Runnable-interface

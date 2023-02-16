@@ -28,8 +28,7 @@
 
 =======================================================================
     Out of 2 ways   
-        Runnable is best to makes thread of class.
+        Runnable is best to makes thread-based class.
     Reasons:
             As we know that Class will definetly extends another class and if we extends Thread Class then we can't extends another class.
             By using runnable-interface we can implements runnable properties and also can inherit existing class prorperties based on requiremnts. 
-            

@@ -1,6 +1,7 @@
     MultiTasking:
             Performing multiple task in single time.
-                EG:
+                Example:
+            -------------------------------------------------
               ||  VLC   ||  MsWord ||  Browser || MusicApp || 
             --------------------------------------------------
                        Operating System ( OS )
@@ -20,13 +21,15 @@
 
     MultiPle Processing     
                 When One System is connected to multiple processor.
-             EG:
+             Example:
+            ---------------------------------------------------
               ||  VLC   ||  MsWord ||  Browser || MusicApp || 
-            --------------------------------------------------
+            ---------------------------------------------------
                        Operating System ( OS )
-            --------------------------------------------------
+            ---------------------------------------------------
+                    ↓          ↓         ↓
                   CPU-1 ||   CPU-2 ||  CPU-3
-            --------------------------------------------------
+            ---------------------------------------------------
     It's Based suitable at System Level / OS Level.
 
 

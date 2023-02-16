@@ -43,7 +43,7 @@ Why We use MultiThreading:
     In case of VLC PLAYER: if we call method to perform-Operation of Video||Sound||Timer Inc,Dec||ProgressBar
         Then it execute one by one so it won't be best PLAYER. (It's will take time to run whole program).
         To run parallerly all the operation of VLC we introduce MULTI-TASKING in program.
-        Now we can watach VIDEO and listen MUSIC parallerly without any sequence.
+        Now we can watach VIDEO and listen MUSIC parallerly and see progress bar parallely without any sequence.
 
 
 =================== JAVA PROVIDE PRE-DEFINED API FOR MultiThreading =============
@@ -81,5 +81,23 @@ TimeOfTermination:  Take less time to terminate.
 
 
 ====================================        WAY TO CREATE THREADS   ================================
+        comes under java.lang ( Package )
     1.  By using Thread-Class
     2.  By using Runnable-interface
+    
+    
+     ========================== Runnable-Interface  DEMO ================
+     public class ThreadDemo implements runnable{
+        public void demo(){
+        for(int i=1; i<=5; i++)
+            System.out.println(i +" ");
+        }
+        public static void main(String [] args){
+            Runnable threadDemo = ThreadDemo();
+            Thread thread1 = new Thread(threadDemo);
+            thread1.start();
+        }  // main-method close here
+    } // program-end here
+        
+     
+     

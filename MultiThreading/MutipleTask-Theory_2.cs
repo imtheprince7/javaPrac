@@ -38,7 +38,7 @@
  1. Performing Single task from single Threads
  2. Performing multiple task from multiple Threads
  3. Performing multiple task from single Threads [ It's not possible ] ( If we do then it follow same object-method relations: first it execute one Method complely then second-method)
-            :Violating MultiThreading concept{
+            :Violating MultiThreading concept
 
  4. Performing multiple task from multiple Threads
         TO perform this 
@@ -50,3 +50,7 @@
     All thread execute continuosly and we can't judge it is done by JVM internally.
     We can control execution flow by synchronization.** 
 
+==================================================================================
+sequence of thread execution is managed by JVM internally
+Thread scheduler and Algorithm ( Round-Robin, etc...)
+main()- method is also a thread in Java Program which is byDefault call by JVM, without explicit call.

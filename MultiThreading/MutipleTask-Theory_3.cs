@@ -27,10 +27,20 @@ class Object{
 }
 
 ======================== DAEMON THREAD =========================================
-Def:-    Which run in the background of another thread.
-Use:-    It provides service to  Threads.
-Exam:-   GarbageCollector, Spelling Checker, etc.
+Def:-     Which run in the background of another thread.
+Use:-     It provides service to  Threads.
+Ex:-      GarbageCollector, Spelling Checker, etc.
+Life:-    Life depends on another Thread. If thread dead then DeamonThread also DEAD.
+Nature:-  It inherit the nature/propertied from the parent thread.
+Role:-    JVM roles in DeamonThread
+Prority:  Most of the time priority of DeamonThread is low but we can change priority based on need.   
+
 
         METHODS:
     public final void setDaemon(boolean b ){ }
     public final boolean isDaemon(){ } return true-false based on result.
+
+
+Case1:      we have to create DeamonThread before starting the thread, If we create DeamonThread after starting it,
+            It will throw run-time exception. i.e: illegalThreadStateException
+Case 2:     We cannot create main Thread as DeamonThread. 

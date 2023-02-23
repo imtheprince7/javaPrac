@@ -1,4 +1,4 @@
-package com.mycompany.mavenproject1;
+
 import  java.sql.SQLException;
 import  java.sql.*;
 
@@ -13,8 +13,7 @@ public class Connect {
                 Connection connection=DriverManager.getConnection(conUrl,user,pass);
 	           System.out.println("Connected to SQL SERVER");
                    
-           //     1001_anand      Anand@1234 
-//connection.setAutoCommit(false);
+    //     1001_anand      Anand@1234 
         if(connection!=null)
         {
             System.out.println("Connect");

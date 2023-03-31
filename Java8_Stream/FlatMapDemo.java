@@ -24,11 +24,10 @@ public class FlatMapDemo {
 
 // Before Java8 TO Print the name of all Players from different team at once.
             System.out.println();        
-            System.out.println("Before Java_8 TO Print the name of all Players from different team at once.");
-            
-        for(List<String> teams: finalPlayers){
-            for(String name:teams){
-                System.out.print(name+" ");
+            System.out.println("Before Java_8 TO Print the name of all Players from different team at once.");            
+            for(List<String> teams: finalPlayers){
+               for(String name:teams){
+                   System.out.print(name+" ");
             }
         }
 
@@ -36,8 +35,9 @@ public class FlatMapDemo {
 // With the Help of Java_8
         System.out.println();
         System.out.println("With the Help of Java_8");
-        finalPlayers.stream().flatMap(m->m.stream()).collect(Collectors.toList()).forEach(name-> System.out.print(name+" "));
 
+
+        finalPlayers.stream().flatMap(m->m.stream()).collect(Collectors.toList()).forEach(name-> System.out.print(name+" "));
         System.out.println();
         System.out.println("Name of the player length should be Greater Than 6:");
         finalPlayers.stream().flatMap(m->m.stream()).filter(s-> s.length()>7).collect(Collectors.toList()).forEach(name-> System.out.print(name+" "));

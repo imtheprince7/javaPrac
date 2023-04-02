@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Set;
 
 public class StreamMethod {
+    
+// *****************  By defalt Stream process the data(object) SEQUENTIALLY **************************
     public static void main(String[] args) {
 // Sorting & All Rest Functionality through JAVA_8
 

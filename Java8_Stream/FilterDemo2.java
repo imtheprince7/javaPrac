@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class FilterDemo2 {
+// *****************  By defalt Stream process the data(object) SEQUENTIALLY **************************    public static void main(String[] args) {
     public static void main(String[] args) {
+        
         List<String> names = Arrays.asList("Prince","Aashish","Chanchal","Aashi Singh","Ankita Singh","Kirti Kumari","Priya Singh","Shubhangi");
         
 // To print Only NAME which size >=6 &&  size <=8 SEVERAL methods:

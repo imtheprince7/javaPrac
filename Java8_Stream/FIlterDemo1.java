@@ -5,7 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FIlterDemo1 {
+public class FIlterDemo1 {   
+
+// *****************  By defalt Stream process the data(object) SEQUENTIALLY **************************
     public static void main(String[] args) {
         List <Integer> numberList= Arrays.asList(2,4,7,8,10,12,45,4,2,7,10,55,14,25,27,16,35,37,18);
         List<Integer> evenNumber = new ArrayList<Integer>();

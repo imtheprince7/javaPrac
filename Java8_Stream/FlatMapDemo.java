@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class FlatMapDemo {
+    
+// *****************  By defalt Stream process the data(object) SEQUENTIALLY **************************
     public static void main(String[] args) {
         List<Integer> list1 = Arrays.asList(1,3);
         List<Integer> list2 = Arrays.asList(2,4);

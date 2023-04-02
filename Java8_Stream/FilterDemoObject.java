@@ -21,6 +21,9 @@ class Product{
 
 
 public class FilterDemoObject {
+
+
+// *****************  By defalt Stream process the data(object) SEQUENTIALLY **************************
     public static void main(String[] args) {
         List<Product> productList = Arrays.asList(
             new Product(1,"Dell",18000),

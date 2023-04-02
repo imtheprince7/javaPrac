@@ -4,11 +4,9 @@ import java.util.Arrays;
 import java.util.List;
 
 public class StreamMethod2 {
+    // *****************  By defalt Stream process the data SEQUENTIALLY **************************
     public static void main(String[] args) {
-
-// By defalt Stream process the data SEQUENTIALLY
-
-
+        
 /*  * findAny()     
     * findFirst()   ---> Both Return Optional class Type result.  
 

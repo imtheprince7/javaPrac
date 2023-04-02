@@ -20,6 +20,8 @@ class Student{
 
 
 public class FlatMapDemo2 {
+
+// *****************  By defalt Stream process the data(object) SEQUENTIALLY **************************
     public static void main(String[] args) {
         List<Student> student1 = Arrays.asList(
             new Student(101,"Prince Kumar",30),

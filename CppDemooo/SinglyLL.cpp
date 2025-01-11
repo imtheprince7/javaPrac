@@ -88,8 +88,20 @@ public:
 
 
     // Operationss;;;;;;;;;;;;;;;;
-    void findPosition( int value){
+    int findPosition( int value){
+
+        Node *temp = head;
+        int position = -1 ;
         if(head == nullptr)
+            return -1;
+            while(temp !=nullptr){
+                if(temp->data == value ){
+                    return position;
+                }
+                position++;
+                temp= temp->next;
+            }
+            return -1;
     }
 
 
@@ -127,7 +139,7 @@ int main() {
     //Operations:
 
     // Search for a value
-    list.findPosition(11);
+    cout<<"Position in Linked-List is:"<< " "<<list.findPosition(111) <<endl;
 
     return 0;
 }

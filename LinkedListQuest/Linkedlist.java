@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class Linkedlist {
 
     public static class Node{
@@ -10,9 +10,11 @@ public class Linkedlist {
         }
     }
     Node head = null,tail= null;
-    Scanner sc = new Scanner(System.in);
+    // Scanner sc = new Scanner(System.in);
    
    public void insertAtBegin(int val){
+
+    System.out.println("Current Thread name 2:"+" "+ Thread.currentThread().getName());
        Node node = new Node(val);
          if(head==null){
             head = tail= node;
@@ -25,6 +27,8 @@ public class Linkedlist {
 
     public void insertMiddle(int val, int pos){
         int count=1;
+
+        System.out.println("Current Thread name 3:"+" "+ Thread.currentThread().getName());
          Node node = new Node(val);
          if(head == null){
              insertAtBegin(val);
@@ -42,6 +46,8 @@ public class Linkedlist {
      }
 
     public void insertAtLast(int val){
+
+        System.out.println("Current Thread name 4:"+" "+ Thread.currentThread().getName());
         Node node = new Node(val);
         if(head==null){
          insertAtBegin(val);
@@ -54,6 +60,7 @@ public class Linkedlist {
     }
     
    public void removeDuplicate(){
+    System.out.println("Current Thread name 5:"+" "+ Thread.currentThread().getName());
         Node temp = head;
         while(temp != null && temp.next != null){
             if(temp.data == temp.next.data){
@@ -76,12 +83,13 @@ public class Linkedlist {
 
 // Insert at Particular position BY RECURSION
     public void insertRec(int val, int pos){
+        System.out.println("Current Thread name 6:"+" "+ Thread.currentThread().getName());
         head = insertAtPosByRecursion(val, pos, head);
     }
 
     public Node insertAtPosByRecursion(int val, int pos, Node node){
         if(pos==1){
-            Node temp = new Node(val, node);
+            Node temp = new Node(val);
             return temp;
         }
         node.next = insertAtPosByRecursion(val, pos--, node.next);
@@ -90,14 +98,17 @@ public class Linkedlist {
     }
 
     public static void main(String[] args) {
+        System.out.println("Current Thread name 1:"+" "+ Thread.currentThread().getName());
         Linkedlist ll = new Linkedlist();
-        // ll.insertAtBegin(12);
-        // ll.insertAtBegin(24);
-        // ll.insertAtBegin(36);
-        // ll.insertAtBegin(48);
-        // ll.insertAtLast(0);
-        // ll.insertMiddle(30, 2);
+        ll.insertAtBegin(12);
+        ll.insertAtBegin(24);
+        ll.insertAtBegin(36);
+        ll.insertAtBegin(48);
+        ll.insertAtLast(0);
+        ll.insertMiddle(30, 2);
 
+
+            
         ll.insertAtLast(1);
         ll.insertAtLast(2);
         ll.insertAtLast(3);

@@ -1,4 +1,4 @@
-package String;
+package DSA_Practice.String;
 
 public class ReverseNumber {
     public static void main(String[] args) {

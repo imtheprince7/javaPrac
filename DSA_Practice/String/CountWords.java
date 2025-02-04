@@ -1,4 +1,4 @@
-package String;
+package DSA_Practice.String;
 import java.util.Scanner;;
 
 public class CountWords {

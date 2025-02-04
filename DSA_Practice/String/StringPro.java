@@ -1,5 +1,3 @@
-package String;
-
 import java.io.StringReader;
 import java.util.Arrays;
 

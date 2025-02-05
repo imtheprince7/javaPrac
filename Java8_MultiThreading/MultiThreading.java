@@ -1,4 +1,3 @@
-package Java8;
 
 class MyRunnable implements Runnable{
     public void run(){

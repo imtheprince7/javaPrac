@@ -1,4 +1,3 @@
-package Java8;
 
 import java.util.*;
 public class StreamPrac {

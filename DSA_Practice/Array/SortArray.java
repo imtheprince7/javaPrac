@@ -1,7 +1,7 @@
-package Array;
+
 
 public class SortArray {
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         
         int [] arr = new int []{34,3,5,1,7,4,23,67,98};
         sortArray(arr);

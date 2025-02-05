@@ -1,3 +1,4 @@
+/*
 public class Leetcode_101 {
  /**
  * Definition for a binary tree node.
@@ -13,7 +14,8 @@ public class Leetcode_101 {
  *         this.right = right;
  *     }
  * }
- */
+ 
+
 class Solution {
     public boolean isSymmetric(TreeNode root) {
         return isMirror(root, root);
@@ -31,3 +33,5 @@ class Solution {
 
     }
 }
+
+*/

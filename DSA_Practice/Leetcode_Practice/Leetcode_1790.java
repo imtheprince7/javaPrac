@@ -1,3 +1,5 @@
+package DSA_Practice.Leetcode_Practice;
+
 import java.util.ArrayList;
 import java.util.List;
 
